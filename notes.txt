@@ -1,0 +1,7 @@
+node requirement not met RESOLVED (nvm)
+yarn requirement not met WASN'T ISSUE TO BEGIN WITH
+Need to install sudo apt install libx11-dev libxkbfile-dev
+Need to install sudo apt install libsecret-1-dev
+
+Works with base repo.
+Needs work on blueprint. webpack keeps getting killed. Maybe yarn build resource usage...
