@@ -1,0 +1,15 @@
+{
+	"name": "Ubuntu - Customized",
+	// "image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/python:1": {
+	// 		"version": "os-provided"
+	// 	}
+	// },
+	"forwardPorts": [3000],
+	"postCreateCommand": "sh /usr/local/setup.sh"
+}
