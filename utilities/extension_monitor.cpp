@@ -20,7 +20,7 @@ int main() {
     }
     tin::init();
     while (!tin::kbhit() || tin::getch() != 'q') {
-        std::string cmd {"../" + OPENVSCODE_SERVER_PATH + "/bin/openvscode-server --list-extensions"};
+        std::string cmd {"cd ../" + OPENVSCODE_SERVER_PATH + " && ./bin/openvscode-server --server-data-dir 'server-data' --user-data-dir 'user-data' --extensions-dir 'user-extensions' --list-extensions"};
         FILE *pipe {popen(cmd.c_str(), "r")};
         char buffer [PIPE_MAX];
         while (fgets(buffer, PIPE_MAX, pipe));
