@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Custom
+openvscode-server-v1.78.2-linux-x64/
+openvscode-server-v1.78.2-linux-x64.tar.gz
+students/
