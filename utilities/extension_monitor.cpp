@@ -20,13 +20,14 @@ int main() {
     }
     tin::init();
     while (!tin::kbhit() || tin::getch() != 'q') {
-        std::string cmd {"cd ../" + OPENVSCODE_SERVER_PATH + " && ./bin/openvscode-server --server-data-dir 'server-data' --user-data-dir 'user-data' --extensions-dir 'user-extensions' --list-extensions"};
+        string cmd {"cd ../" + OPENVSCODE_SERVER_PATH + " && ./bin/openvscode-server --server-data-dir 'server-data' --user-data-dir 'user-data' --extensions-dir 'user-extensions' --list-extensions"};
         FILE *pipe {popen(cmd.c_str(), "r")};
+        string got;
         char buffer [PIPE_MAX];
-        while (fgets(buffer, PIPE_MAX, pipe));
+        while (fgets(buffer, PIPE_MAX, pipe)) got += buffer;
         pclose(pipe);
-        if (expected != buffer) {
-            cout << "Discrepancy Detected:\n\texpected=" << expected << "\n\tgot=" << buffer << '\n';
+        if (expected != got) {
+            cout << "Discrepancy Detected:\n\texpected=\n" << expected << "\n\tgot=\n" << got << '\n';
         }
         usleep(SLEEP);
     }
