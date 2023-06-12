@@ -7,8 +7,8 @@
 
 using namespace std;
 
-const int PIPE_MAX                  {2048};
-const int SLEEP                     {10 * 1000000};
+const int PIPE_MAX {2048};
+const int SLEEP    {10 * 1000000};
 
 // This should also throw an exception if the devcontainer was created incorrectly.
 const string OPENVSCODE_SERVER_PATH {"openvscode-server-v" + string {getenv("OPENVSCODE_SERVER_VERSION")} + "-linux-x64"};

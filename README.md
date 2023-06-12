@@ -25,7 +25,7 @@ Close to none. But, this is designed for instructing people who are new to progr
             - On Mac, use `ps all` to determine the PID of `sh start.sh` and terminate it with `kill -15 [insert PID here]`.
     - Additional functionality:
         - Run `cd utilities && ./extension_monitor.out` to monitor the user-installed extensions. This is because there is no guaranteed way of preventing a student from inadvertently installing unwanted extensions. The side panel is hidden from students by default, but it's not completely fool-proof.
-        - Modify `utilities/valid_extensions` to include the extension IDs of valid extensions used by the monitor.
+        - Modify `utilities/valid_extensions.txt` to include the extension IDs of valid extensions used by the monitor.
         - Add content to `utilities/template` to customize the default files provided to each student.
         - Modify `settings.json` for globally applied settings.
         - The version of OpenVSCode Server can be changed in the Dockerfile. **This may cause additional nuances, such as needing to update `.gitignore`**.
