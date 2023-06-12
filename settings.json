@@ -4,5 +4,5 @@
     "workbench.colorTheme": "Default High Contrast Light",
     "workbench.tips.enabled": false,
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "readme"
 }
