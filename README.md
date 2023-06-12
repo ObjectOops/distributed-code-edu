@@ -30,7 +30,8 @@ Close to none. But, this is designed for instructing people who are new to progr
         - Modify `settings.json` for globally applied settings.
         - The version of OpenVSCode Server can be changed in the Dockerfile. **This may cause additional nuances, such as needing to update `.gitignore`**.
 ## Updating
-Run `sh uninstall.sh` to remove all executables, pull from the source repo, and then rebuild the devcontainer.
+Run `sh uninstall.sh` to remove all executables, pull from the source repo, and then rebuild the devcontainer.  
+Remember to update `.gitignore`.
 ## Note on Performance
 Four cores can support at least fifteen connected devices with negligible strain.  
 The maximum load is likely higher.
