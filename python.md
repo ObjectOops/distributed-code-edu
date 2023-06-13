@@ -1,0 +1,51 @@
+# The Python Programming Language - Elementary-ish Guide
+## Contents
+- What is Python?
+- Why Python?
+- Running Python
+    - distributed-code-edu and Replit
+    - The Python Interpreter
+    - About Files
+    - Hello World
+    - IO
+    - Comments
+- Variables
+    - About Variables
+    - Integer
+    - Float
+    - Boolean
+    - String
+    - Tuple
+    - List
+    - Dictionary
+    - OOP and More Stuff
+- Arithmetic and Logic
+    - Math in Computers
+    - Four Function Math
+    - The `math` Module
+    - Boolean Operations
+        - AND, OR, NOT, XOR
+        - Bitwise
+- Control Flow
+    - About Control Flow
+    - Conditionals
+        - If
+        - Elif
+        - Else
+    - Loops
+        - For
+        - While
+    - Nesting
+- Functions
+    - About Functions
+    - Making a Function
+    - Using a Function
+- Modules
+    - About Modules
+    - Making a Module
+    - Using a Module
+- More
+    - The Python Standard Library
+    - Common Algorithms
+    - File IO
+- Project
