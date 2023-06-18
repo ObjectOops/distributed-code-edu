@@ -7,7 +7,7 @@ We can now also efficiently *rectify* file contents and answer questions without
 ## Security
 Close to none. But, this is designed for instructing people who are new to programming, let alone using a computer, or even type.
 ## Usage
-1. Create a devcontainer, recommended with Codespaces (4-cores).
+1. Create a devcontainer or use Docker, recommended with Codespaces (4-cores).
 2. Checkout gh-pages.
     - Modify `directories.txt` to contain the desired folder names for each student.
     - Currently, it contains sample names for 32 students.
@@ -22,9 +22,10 @@ Close to none. But, this is designed for instructing people who are new to progr
         - Run `sh start.sh` and **change port 3000 to public**.
         - Now the links generated in the previous section should work.
         - When not instructing, shutdown the server with <kbd>CTRL</kbd> + <kbd>C</kbd>.
-            - On Mac, use `ps all` to determine the PID of `sh start.sh` and terminate it with `kill -15 [insert PID here]`.
+            - On Mac, use `ps all` to determine the PID of `sh start.sh` and terminate it with `kill -15 [insert PID here]`. Or use `killall sh` (less recommended).
     - Additional functionality:
         - Run `cd utilities && ./extension_monitor.out` to monitor the user-installed extensions. This is because there is no guaranteed way of preventing a student from inadvertently installing unwanted extensions. The side panel is hidden from students by default, but it's not completely fool-proof.
+            - In the same way, use `./add_file.out [insert relative file path]` and `./remove_file.out [insert relative file path]` to add and remove files respectively from all student directories.
         - Modify `utilities/valid_extensions.txt` to include the extension IDs of valid extensions used by the monitor.
         - Add content to `utilities/template` to customize the default files provided to each student.
         - Modify `settings.json` for globally applied settings.
@@ -34,4 +35,5 @@ Run `sh uninstall.sh` to remove all executables, pull from the source repo, and 
 Remember to update `.gitignore`.
 ## Note on Performance
 Four cores can support at least fifteen connected devices with negligible strain.  
-The maximum load is likely higher.
+The maximum load is likely higher.  
+If using Codespaces, you may be automatically timed out after half an hour. You can extend this in your GitHub settings.
