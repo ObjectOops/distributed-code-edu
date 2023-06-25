@@ -23,6 +23,8 @@ Close to none. But, this is designed for instructing people who are new to progr
         - Now the links generated in the previous section should work.
         - When not instructing, shutdown the server with <kbd>CTRL</kbd> + <kbd>C</kbd>.
             - On Mac, use `ps all` to determine the PID of `sh start.sh` and terminate it with `kill -15 [insert PID here]`. Or use `killall sh` (less recommended).
+            - Or just close the terminal session.
+        - Also see notes in `utilities/template/readme.md`.
     - Additional functionality:
         - Run `cd utilities && ./extension_monitor.out` to monitor the user-installed extensions. This is because there is no guaranteed way of preventing a student from inadvertently installing unwanted extensions. The side panel is hidden from students by default, but it's not completely fool-proof.
             - In the same way, use `./add_file.out [insert relative file path]` and `./remove_file.out [insert relative file path]` to add and remove files respectively from all student directories.

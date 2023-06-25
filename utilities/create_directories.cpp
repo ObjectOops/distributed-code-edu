@@ -12,7 +12,7 @@ int main() {
     system("mkdir ../students");
     for (string &i : directories) {
         // Lazy management.
-        string cmd {"mkdir ../students/" + i + " && cp template/* ../students/" + i};
+        string cmd {"mkdir ../students/" + i + " && cp -r template/ ../students/" + i};
         cout << "Executing: " << cmd << '\n';
         system(cmd.c_str());
     }
